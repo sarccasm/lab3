@@ -1,0 +1,4 @@
+@model IEnumerable<User>
+@{ ViewData["Title"] = "Admin users"; }
+<h1>Admin: Users</h1><p>This page is available only after a valid POST body parameter.</p>
+<table><thead><tr><th>ID</th><th>Name</th><th>Email</th></tr></thead><tbody>@foreach(var user in Model){<tr><td>@user.Id</td><td>@user.Name</td><td>@user.Email</td></tr>}</tbody></table>

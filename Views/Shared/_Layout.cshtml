@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>@ViewData["Title"] | Product Manager</title><link rel="stylesheet" href="~/css/site.css" /></head>
+<body><header><nav><a class="brand" href="/products">Product Manager</a><a href="/products">Products</a><a href="/products/create">Add product</a></nav></header>
+<main class="container">@if (TempData["Message"] != null) { <div class="notice">@TempData["Message"]</div> } @RenderBody()</main>
+<footer>ASP.NET Core MVC | Routing Practice 3</footer>
+@await RenderSectionAsync("Scripts", required: false)
+</body></html>

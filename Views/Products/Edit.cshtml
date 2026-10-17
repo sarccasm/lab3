@@ -1,0 +1,3 @@
+@model Product
+@{ ViewData["Title"] = "Edit product"; }
+<h1>Edit product #@Model.Id</h1><form method="post" action="/products/edit/@Model.Id" class="panel"><partial name="_ProductFields" model="Model"/><div class="buttons"><button type="submit">Save changes</button><a class="btn secondary" href="/products">Cancel</a></div></form>
